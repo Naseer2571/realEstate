@@ -1,0 +1,28 @@
+<div class="bg-con">
+<div class="mainComp">
+
+    
+   
+    
+    <div class="find-con">
+        <p class="find-para">Find your new home here!..</p>
+        <input type="text" class="input" placeholder="search for homes" ng-model='query'/>
+        </div>
+        <div class="un-list">
+        <div   class="cities" ng-repeat="elem in $ctrl.myArray | filter:query">
+            <a href=#!/home/{{elem.id}}>
+            <div class="citi-list-con">
+                <img src={{elem.imageUrl}} class="image-citi"/>
+                <p class="services">{{elem.city}}</p>
+                <p class="services">{{elem.type}}</p>
+
+            </div>
+            </a>
+        </div>
+        </div>
+    
+    
+    </div>
+   
+</div>
+    

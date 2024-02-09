@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" defer></script>
+        <script src="https://code.angularjs.org/1.8.2/angular-route.min.js" defer></script>
+        <script src="app.module.js" defer></script>
+        <script src="./app.config.js" defer></script>
+        <script src="./app.service.js" defer></script>
+       
+        <script src="./maincomponent/maincom.module.js" defer></script>
+        <script src="./maincomponent/main.component.js" defer></script>
+        <script src="./myHeader/myHeader.module.js" defer></script>
+        <script src="./myHeader/myHeader.component.js" defer></script>
+        <script src="./aboutsection/about.module.js" defer></script>
+        <script src="./aboutsection/about.component.js" defer></script>
+        <script src="./loginsection/login.module.js" defer></script>
+        <script src="./loginsection/login.component.js" defer></script>
+        <script src="./properties/properties.module.js" defer></script>
+        <script src="./properties/properties.component.js" defer></script>
+        
+        
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="last-con">
+            <myheader></myheader>
+            <ng-view></ng-view>
+
+        </div>
+    
+    </body>
+</html>
